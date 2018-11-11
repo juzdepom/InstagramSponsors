@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import { CustomAuthButton } from '../reusable';
 
-export default class WelcomeScreen extends Component {
+export default class HomeScreen extends Component {
     render() {
-        // var { container }
         let { container,
             containerBlock,
             welcomeTextView,
@@ -16,18 +15,10 @@ export default class WelcomeScreen extends Component {
             <View style={containerBlock}>
                 <View style={welcomeTextView}>
                     <Text style={welcome}>Welcome!</Text>
-                    <Text style={blurb}>The purpose of this app is to facilitate the relationship between Instagram influencers and their sponsors.</Text>
+                    <Text style={blurb}>You are logged in as XXXX</Text>
                 </View>
             </View>
-            <View style={containerBlock}>
-                <View style={welcomeTextView}>
-                    <CustomAuthButton title="Login"/>
-                    <CustomAuthButton title="Sign Up"/>
-                    <CustomAuthButton title="Enter As Guest"/>
-
-
-                </View>
-            </View>
+            <View style={containerBlock}></View>
 
             <View style={containerBlock}></View>
 
