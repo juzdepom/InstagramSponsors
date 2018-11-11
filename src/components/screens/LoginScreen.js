@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import { CustomAuthButton } from '../reusable';
+import { CustomAuthButton, CustomDefaultHeader } from '../reusable';
 
 export default class LoginScreen extends Component {
     render() {
-        // var { container }
         let { container,
             containerBlock,
             welcomeTextView,
@@ -12,7 +11,9 @@ export default class LoginScreen extends Component {
             blurb } = styles
         return (
         <View style={container}>
-            <View style={containerBlock}></View>
+            <View style={containerBlock}>
+                <CustomDefaultHeader leftButtonPress={() => this.props.navigation.goBack()}/>
+            </View>
             <View style={containerBlock}>
                 <View style={welcomeTextView}>
                     <Text style={welcome}>Login</Text>

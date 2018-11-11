@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import { CustomAuthButton } from '../reusable';
+import { CustomDefaultHeader } from '../reusable';
 
 export default class SignUpScreen extends Component {
     render() {
-        // var { container }
         let { container,
             containerBlock,
             welcomeTextView,
@@ -12,10 +11,12 @@ export default class SignUpScreen extends Component {
             blurb } = styles
         return (
         <View style={container}>
-            <View style={containerBlock}></View>
+            <View style={containerBlock}>
+                <CustomDefaultHeader leftButtonPress={() => this.props.navigation.goBack()}/>
+            </View>
             <View style={containerBlock}>
                 <View style={welcomeTextView}>
-                    <Text style={welcome}>Login</Text>
+                    <Text style={welcome}>Sign Up</Text>
                     <Text style={blurb}>Username</Text>
                     <Text style={blurb}>Password</Text>
                 </View>

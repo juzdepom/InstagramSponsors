@@ -5,7 +5,9 @@ export default class CustomAuthButton extends Component {
     render() {
         let { container, text } = styles
         return (
-        <TouchableHighlight style={[container, { backgroundColor: 'blue' }]}>
+        <TouchableHighlight
+            onPress={this.props.onPress}
+            style={[container, { backgroundColor: 'blue' }]}>
             <Text style={text}>{this.props.title}</Text>
         </TouchableHighlight>
         );

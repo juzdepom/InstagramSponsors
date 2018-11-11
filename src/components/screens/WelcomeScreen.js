@@ -3,8 +3,10 @@ import {StyleSheet, Text, View} from 'react-native';
 import { CustomAuthButton } from '../reusable';
 
 export default class WelcomeScreen extends Component {
+    navigate(screenName){
+        this.props.navigation.navigate(screenName)
+    }
     render() {
-        // var { container }
         let { container,
             containerBlock,
             welcomeTextView,
@@ -21,9 +23,18 @@ export default class WelcomeScreen extends Component {
             </View>
             <View style={containerBlock}>
                 <View style={welcomeTextView}>
-                    <CustomAuthButton title="Login"/>
-                    <CustomAuthButton title="Sign Up"/>
-                    <CustomAuthButton title="Enter As Guest"/>
+                    <CustomAuthButton
+                        title="Login"
+                        onPress={() => this.navigate("LoginScreen")}
+                        />
+                    <CustomAuthButton
+                        title="Sign Up"
+                        onPress={() => this.navigate("SignUpScreen")}
+                        />
+                    <CustomAuthButton
+                        title="Enter As Guest"
+                        onPress={() => this.navigate("HomeScreen")}
+                        />
 
 
                 </View>

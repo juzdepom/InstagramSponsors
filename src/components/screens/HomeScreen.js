@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import { CustomAuthButton } from '../reusable';
+import { CustomDefaultHeader } from '../reusable';
 
 export default class HomeScreen extends Component {
     render() {
@@ -11,7 +11,9 @@ export default class HomeScreen extends Component {
             blurb } = styles
         return (
         <View style={container}>
-            <View style={containerBlock}></View>
+            <View style={containerBlock}>
+                <CustomDefaultHeader leftButtonPress={() => this.props.navigation.goBack()}/>
+            </View>
             <View style={containerBlock}>
                 <View style={welcomeTextView}>
                     <Text style={welcome}>Welcome!</Text>
