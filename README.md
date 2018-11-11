@@ -2,12 +2,21 @@
 
 by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 
+## Installation Instructions
+
+Instructions here.
+
 ## Day One
 
 Date: Su, Nov 11, 2018
 
+*
+*
+*
+*
+*
 
-# Everything below is template README.md stuff
+# Everything below is template stuff (IGNORE)
 
 
 ### Prerequisites
