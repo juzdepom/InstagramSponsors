@@ -6,19 +6,31 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 
 Instructions here.
 
+## Session 2
+
+Date: W, Nov 12, 2018 (evening)
+
+### 💭 Learning Lessons 💭
+
+* xx
+
+### ✅ Errors Resolved ✅
+
+* xx
+
 ## Session 1
 
 Date: Su, Nov 11, 2018 (morning)
 
-### Learning Lessons
+### 💭 Learning Lessons 💭
 
 * After adding a new library, need to restart app.
 
-### Errors Encountered
+### ✅ Errors Resolved ✅
 
 * Cannot find module 'local-cli/cli.js' when trying to run "npm start"
 
-INSERT IMAGE HERE
+![local cli](screenshots/session1/local-cli.png)
 
 Resolved: "npm install"
 
