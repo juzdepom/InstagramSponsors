@@ -4,23 +4,22 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 
 ## Installation Instructions
 
-Instructions here.
+* NOTE: This app isn't going to work because I didn't include the Firebase files.
+* After downloading the files, run ```npm install``` and then ```npm start``` and then ```react-native-run-ios```
 
 ## Session 2
 
-Date: W, Nov 12, 2018 (evening)
+*🗓 - W, Nov 12, 2018*
+*📍 -  Haddon Township Library*
+*🕐 - 4:20 pm - 6:20 pm*
+Made almost zero progress today. Tried to connect app to Firebase using react-native-firebase and the [manual integration](https://rnfirebase.io/docs/v5.x.x/installation/initial-setup) for [iOS](https://rnfirebase.io/docs/v5.x.x/installation/ios) but when I tried to follow the instructions and then run the project, the app would crash immediately on the simulator with no error message.
+Finally, decided to use delete all the changes I made and revert to previous commit. Instead of importing ```react-native-firebase``` I just imported ```firebase``` and referred to one of my previous projects to try to authenticate. Got a little stuck here for a bit due to a syntax error, (forgot to add ```{}``` when importing a constant from another js file}) and went down a rabbithole because of the the simulator error message stating that I had an "invalid API key".
+However, with commit 4, we have successfully connected Firebased and authenticated anonymously.
 
-### 💭 Learning Lessons 💭
-
-* xx
-
-### ✅ Errors Resolved ✅
-
-* xx
 
 ## Session 1
 
-Date: Su, Nov 11, 2018 (morning)
+*Date: Su, Nov 11, 2018 (morning)*
 
 ### 💭 Learning Lessons 💭
 

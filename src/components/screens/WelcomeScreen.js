@@ -1,18 +1,41 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import { CustomAuthButton } from '../reusable';
+// import firebaseApp from '../../firebase/firebaseSetup';
+import * as firebase from 'firebase';
+import { firebaseConfig }  from '../../firebase/firebaseConfig';
 
 export default class WelcomeScreen extends Component {
     navigate(screenName){
         this.props.navigation.navigate(screenName)
     }
+    logInAsGuest(){
+        console.warn("logging in as guest", firebaseConfig)
+        // this.props.navigation.navigate("HomeScreen")
+
+        firebase.auth().signInAnonymously()
+            .then(() => {
+                console.warn("logged in successfully as guest");
+                this.props.navigation.navigate("HomeScreen")
+
+                //set authenticated state as true.
+            })
+            .catch((error) => {
+                console.warn(`login failed. error: ${error}` );
+            })
+
+
+    }
     render() {
+
+        firebase.initializeApp(firebaseConfig);
         let { container,
             containerBlock,
             welcomeTextView,
             welcome,
             blurb } = styles
         return (
+
         <View style={container}>
             <View style={containerBlock}></View>
             <View style={containerBlock}>
@@ -33,7 +56,7 @@ export default class WelcomeScreen extends Component {
                         />
                     <CustomAuthButton
                         title="Enter As Guest"
-                        onPress={() => this.navigate("HomeScreen")}
+                        onPress={() => this.logInAsGuest()}
                         />
 
 
