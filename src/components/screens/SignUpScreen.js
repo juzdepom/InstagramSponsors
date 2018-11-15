@@ -16,9 +16,9 @@ export default class SignUpScreen extends Component {
             </View>
             <View style={containerBlock}>
                 <View style={welcomeTextView}>
-                    <Text style={welcome}>Sign Up</Text>
-                    <Text style={blurb}>Username</Text>
-                    <Text style={blurb}>Password</Text>
+                    <Text style={welcome}>Sign Up is temporarily disabled</Text>
+                    {/* <Text style={blurb}>Username</Text>
+                    <Text style={blurb}>Password</Text> */}
                 </View>
             </View>
             <View style={containerBlock}></View>
