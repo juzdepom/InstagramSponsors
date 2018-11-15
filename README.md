@@ -13,33 +13,31 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 *🕐 6:15pm - ? * <br />
 *Commits: ?* <br>
 
-To Do List:
-◻️ create sponsor accounts on firebase
-◻️ create userProfile in firebase and create 2 data packet - codebreaker & dvlpr
-◻️ data packet will include for now godMode(boolean), sponsoring(array of uids), sponsoredBy(array of uids) email, uid, name, instagram, notes, paid(boolean)
-◻️ when navigating to HomeScreen, will check for data with uid, if does not exist, create it with defaults (console warn)
-◻️ remove the back button from default head and replace with hamburger lines
-◻️ create default bottom tab (similar to instagram) - explore (aka all users) button, my profile screen, which will have my sponsors
-◻️ create ExploreScreen and MyProfileScreen
+To Do List:<br>
+◻️ create sponsor accounts on firebase<br>
+◻️ create userProfile in firebase and create 2 data packet - codebreaker & dvlpr<br>
+◻️ data packet will include for now godMode(boolean), sponsoring(array of uids), sponsoredBy(array of uids) email, uid, name, instagram, notes, paid(boolean)<br>
+◻️ when navigating to HomeScreen, will check for data with uid, if does not exist, create it with defaults (console warn)<br>
+◻️ remove the back button from default head and replace with hamburger lines<br>
+◻️ create default bottom tab (similar to instagram) - explore (aka all users) button, my profile screen, which will have my sponsors<br>
+◻️ create ExploreScreen and MyProfileScreen<br>
 
 ## Session 3
 *🗓 W, Nov 14, 2018* <br />
 *📍 Planet Fitness, Collingswood, NJ* <br />
 *🕐 10pm - 2am (4 hours)* <br />
 *Commits: 5,6* <br>
-OMG am so tired. Not going to go in detail but we can now login with email.
-Next steps:
-✅ temporarily disable needing to put in a password for login
-✅ temporarily put all sponsor emails on login page for easy access
-◻️ create sponsor accounts on firebase
-◻️ create userProfile in firebase and create 2 data packet - codebreaker & dvlpr
-◻️ data packet will include for now godMode(boolean), sponsoring(array of uids), sponsoredBy(array of uids) email, uid, name, instagram, notes, paid(boolean)
-◻️ when navigating to HomeScreen, will check for data with uid, if does not exist, create it with defaults (console warn)
-◻️ remove the back button from default head and replace with hamburger lines
-◻️ create default bottom tab (similar to instagram) - explore (aka all users) button, my profile screen, which will have my sponsors
-◻️ create ExploreScreen and MyProfileScreen
-
-
+OMG am so tired. Not going to go in detail but we can now login with email.<br>
+Next steps:<br>
+✅ temporarily disable needing to put in a password for login<br>
+✅ temporarily put all sponsor emails on login page for easy access<br>
+◻️ create sponsor accounts on firebase<br>
+◻️ create userProfile in firebase and create 2 data packet - codebreaker & dvlpr<br>
+◻️ data packet will include for now godMode(boolean), sponsoring(array of uids), sponsoredBy(array of uids) email, uid, name, instagram, notes, paid(boolean)<br>
+◻️ when navigating to HomeScreen, will check for data with uid, if does not exist, create it with defaults (console warn)<br>
+◻️ remove the back button from default head and replace with hamburger lines<br>
+◻️ create default bottom tab (similar to instagram) - explore (aka all users) button, my profile screen, which will have my sponsors<br>
+◻️ create ExploreScreen and MyProfileScreen<br>
 
 ## Session 2
 
