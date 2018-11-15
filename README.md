@@ -7,6 +7,40 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 * NOTE: This app isn't going to work because I didn't include the Firebase files.
 * After downloading the files, run ```npm install``` and then ```npm start``` and then ```react-native-run-ios```
 
+## Session 4
+*🗓 Th, Nov 15, 2018* <br />
+*📍 Home, HaddonView Apartments* <br />
+*🕐 6:15pm - ? * <br />
+*Commits: ?* <br>
+
+To Do List:
+◻️ create sponsor accounts on firebase
+◻️ create userProfile in firebase and create 2 data packet - codebreaker & dvlpr
+◻️ data packet will include for now godMode(boolean), sponsoring(array of uids), sponsoredBy(array of uids) email, uid, name, instagram, notes, paid(boolean)
+◻️ when navigating to HomeScreen, will check for data with uid, if does not exist, create it with defaults (console warn)
+◻️ remove the back button from default head and replace with hamburger lines
+◻️ create default bottom tab (similar to instagram) - explore (aka all users) button, my profile screen, which will have my sponsors
+◻️ create ExploreScreen and MyProfileScreen
+
+## Session 3
+*🗓 W, Nov 14, 2018* <br />
+*📍 Planet Fitness, Collingswood, NJ* <br />
+*🕐 10pm - 2am (4 hours)* <br />
+*Commits: 5,6* <br>
+OMG am so tired. Not going to go in detail but we can now login with email.
+Next steps:
+✅ temporarily disable needing to put in a password for login
+✅ temporarily put all sponsor emails on login page for easy access
+◻️ create sponsor accounts on firebase
+◻️ create userProfile in firebase and create 2 data packet - codebreaker & dvlpr
+◻️ data packet will include for now godMode(boolean), sponsoring(array of uids), sponsoredBy(array of uids) email, uid, name, instagram, notes, paid(boolean)
+◻️ when navigating to HomeScreen, will check for data with uid, if does not exist, create it with defaults (console warn)
+◻️ remove the back button from default head and replace with hamburger lines
+◻️ create default bottom tab (similar to instagram) - explore (aka all users) button, my profile screen, which will have my sponsors
+◻️ create ExploreScreen and MyProfileScreen
+
+
+
 ## Session 2
 
 *🗓 W, Nov 12, 2018* <br />
