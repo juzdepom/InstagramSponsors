@@ -11,13 +11,14 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 
 *🗓 W, Nov 12, 2018* <br />
 *📍 Haddon Township Library* <br />
-*🕐 4:20 pm - 6:20 pm* <br />
+*🕐 4:20 pm - 6:20 pm (2 hours)* <br />
+*Commits: 4*
 <br>
 Made almost zero progress today. Tried to connect app to Firebase using react-native-firebase and the [manual integration](https://rnfirebase.io/docs/v5.x.x/installation/initial-setup) for [iOS](https://rnfirebase.io/docs/v5.x.x/installation/ios) but when I tried to follow the instructions and then run the project, the app would crash immediately on the simulator with no error message.
 <br><br>
-Finally, decided to use delete all the changes I made and revert to previous commit. Instead of importing ```react-native-firebase``` I just imported ```firebase``` and referred to one of my previous projects to try to authenticate.
+Finally, decided to delete all the changes I made and revert to previous commit. Instead of importing ```react-native-firebase``` I just imported ```firebase``` and referred to one of my previous projects to try to authenticate.
 <br><br>
-Got a little stuck here for a bit due to a syntax error, (forgot to add ```{}``` when importing a constant from another js file}) and went down a rabbithole because of the the simulator error message stating that I had an "invalid API key".
+Got a little stuck here due to a syntax error, (forgot to add ```{}``` when importing a constant from another js file}) and went down a rabbithole because of the the simulator error message stating that I had an "invalid API key".
 However, with commit 4, we have successfully connected Firebase and authenticated anonymously.
 
 

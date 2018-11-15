@@ -4,6 +4,7 @@ import { CustomDefaultHeader } from '../reusable';
 
 export default class HomeScreen extends Component {
     render() {
+        const { userType } = this.props.navigation.state.params
         let { container,
             containerBlock,
             welcomeTextView,
@@ -17,7 +18,7 @@ export default class HomeScreen extends Component {
             <View style={containerBlock}>
                 <View style={welcomeTextView}>
                     <Text style={welcome}>Welcome!</Text>
-                    <Text style={blurb}>You are logged in as XXXX</Text>
+                    <Text style={blurb}>You are logged in as {userType}</Text>
                 </View>
             </View>
             <View style={containerBlock}></View>
