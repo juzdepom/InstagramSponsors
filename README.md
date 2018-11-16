@@ -10,8 +10,8 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 ## Session 5
 *🗓 F, Nov 16, 2018* <br>
 *📍 Home, HaddonView Apartments* <br>
-*🕐 5am - ?* <br>
-*Commits: ?* <br>
+*🕐 5am - 7am <br>
+*Commits: 9,10,11* <br>
 
 ✅ Create the CustomTabBar<br>
 ✅ Create and connect MyProfileScreen and ExploreScreen<br>
@@ -19,7 +19,7 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 ✅ Customize ExploreScreen to display all users.<br>
 FIRST THING'S FIRST, create the bottom bar!<br>
 
-20 min break (5:36 AM-5:56 AM)
+20 min break (5:36 AM-5:56 AM)<br>
 6:37 - I'm stuck 🤯
 I think it has something to do with synchronous and asynchronous fetching. We are working with HomeScreen.js and firebaseConfig. I need to pass the user profile data that I'm fetching from the database to the MyProfile component. However with how I've currently written the code, userProfileData is being set to undefined because it's not waiting for the data to be fetched back from the database. Wonder if I can check in with Kostas? If I was working at Think, I could ask the senior devs when I come in to work.
 
