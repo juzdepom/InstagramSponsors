@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import { CustomDefaultHeader, CustomTabBar } from '../reusable';
+import { CustomDefaultHeader, CustomTabBar, CustomAuthButton } from '../reusable';
 import { fetch, createNewProfile, getUserProfile } from '../../firebase/firebaseConfig';
 import { MyProfileScreen, ExploreScreen } from './index';
 
@@ -12,20 +12,48 @@ let s = {
 export default class HomeScreen extends Component {
     constructor(){
         super();
+        // const { userType, userData } = this.props.navigation.state.params
+        // const { uid } = userData
+        // let userProfileData = getUserProfile(uid)
+
         this.state = {
             currentScreen: s.myProfile,
+            userProfileData: null,
+            userType: null,
+            userData: null,
+            uid: null,
+            userProfileData: null,
         }
+    }
+    componentDidMount(){
+        const { userType, userData } = this.props.navigation.state.params
+        const { uid } = userData
+        // let userProfileData = getUserProfile(uid)
+
+        this.setState({
+            userType,
+            userData,
+            uid,
+            userProfileData: getUserProfile(uid)
+        })
+
+        // console.warn('user profile data: ', this.state.userProfileData)
     }
     switchScreens(currentScreen){
         this.setState({currentScreen})
     }
 
     render() {
+        // console.warn('state: ', this.state)
+        console.warn('userProfileData from HomeScreen.js: ', this.state.userProfileData)
 
-        const { userType, userData } = this.props.navigation.state.params
-        const { uid } = userData
+        //The userData here comes from authentication
+        // const { userType, userData } = this.props.navigation.state.params
+        // const { uid } = userData
+        // this.setUserProfileData(uid)
         // fetch("userProfiles");
-        // getUserProfile(uid)
+
+
         // createNewProfile("onTgOief53hXLf913FO2N1sU92h1", "devstickerscom@gmail.com", "devstickers")
         let { container,
             containerBlock,
@@ -35,7 +63,7 @@ export default class HomeScreen extends Component {
         let screen;
 
         if (this.state.currentScreen == s.myProfile){
-            screen = <MyProfileScreen userType={userType}/>
+            screen = <MyProfileScreen userType={this.state.userType} userProfileData={this.state.userProfileData}/>
         } else {
             screen = <ExploreScreen/>
         }
@@ -50,6 +78,14 @@ export default class HomeScreen extends Component {
 
             {/* <MyProfileScreen userType={userType}/> */}
             {/* <ExploreScreen/> */}
+            <CustomAuthButton
+                title="get user profile data"
+                onPress={() =>
+                    this.setState({
+                    userProfileData: getUserProfile(this.state.uid)
+                })
+            }
+            />
 
             <CustomTabBar
                 leftButtonTitle = "Explore"

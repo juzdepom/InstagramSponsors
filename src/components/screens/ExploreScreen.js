@@ -3,6 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 
 export default class ExploreScreen extends Component {
     render(){
+
         let {
             containerBlock,
             welcomeTextView,
