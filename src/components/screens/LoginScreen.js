@@ -12,6 +12,7 @@ export default class LoginScreen extends Component {
             email: null,
             password: null,
             dummyPassword: "Password",
+            dummyEmail: "hi@dvlpr.io"
         };
     }
     login(email, password){
@@ -22,7 +23,7 @@ export default class LoginScreen extends Component {
             firebaseApp.auth().signInWithEmailAndPassword(email, password)
             .then((results) => {
                 let { email } = results.user
-                console.warn("user: ", email)
+                // console.warn("results: ", results)
                 this.props.navigation.navigate("HomeScreen", { userType: email, userData: results.user })
             })
             .catch(function(error) {
@@ -46,29 +47,40 @@ export default class LoginScreen extends Component {
             <View style={containerBlock}>
                 <CustomDefaultHeader leftButtonPress={() => this.props.navigation.goBack()}/>
             </View>
-            <View style={containerBlock}>
+            <View style={[{flex: 2 }]}>
                 <View style={loginView}>
 
                     <Text style={login}>Login</Text>
-                    <Text><B>Emails</B>{"\n"}hi@dvlpr.io {"\n"}mikhail@micainteractive.com{"\n"}tim@fueledonbacon.com{"\n"}info@devhero.shop{"\n"}devstickerscom@gmail.com{"\n"}adrienne.tacke@gmail.com{"\n"}sean@nakmuaynation.com{"\n"}ronan@kicksta.co {"\n"}</Text>
+
+
+
                     <CustomDefaultTextInput
+                        onPress={() => console.warn('tapping')}
                         placeholder="Email"
                         onChangeText={(email) => this.setState({email})}
                         value={this.state.email}
                     />
+
                     <Text>For testing purposes, there's is temporarily no need to enter password</Text>
+
                     <CustomDefaultTextInput
                         placeholder="Password"
                         onChangeText={(password) => this.setState({password})}
                         value={this.state.password}
                     />
+
                     <CustomAuthButton
                         title="Login"
-                        onPress={() => this.login(this.state.email, this.state.dummyPassword)}
+                        onPress={() => this.login(this.state.dummyEmail, this.state.dummyPassword)}
                     />
                 </View>
             </View>
-            <View style={containerBlock}></View>
+            <View style={[containerBlock, ]}>
+                <View style={loginView}>
+                    <Text><B>Emails</B>{"\n"}hi@dvlpr.io {"\n"}mikhail@micainteractive.com{"\n"}tim@fueledonbacon.com{"\n"}info@devhero.shop{"\n"}devstickerscom@gmail.com{"\n"}adrienne.tacke@gmail.com{"\n"}sean@nakmuaynation.com{"\n"}ronan@kicksta.co {"\n"}</Text>
+                </View>
+
+            </View>
 
             <View style={containerBlock}></View>
 

@@ -3,10 +3,11 @@ import { StyleSheet, TextInput } from 'react-native';
 
 export default class CustomAuthButton extends Component {
     render() {
-        let { placeholder, onChangeText, value } = this.props
+        let { placeholder, onChangeText, value, onPress } = this.props
         let { inputField } = styles
         return (
         <TextInput
+            onPress={onPress}
             style={inputField}
             placeholder={placeholder}
             onChangeText={onChangeText}

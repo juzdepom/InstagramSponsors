@@ -1,10 +1,21 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import { CustomDefaultHeader } from '../reusable';
+import { fetchFirebaseDataUrl, fetch } from '../../firebase/firebaseConfig';
 
 export default class HomeScreen extends Component {
+    componentWillMount(){
+    }
+
     render() {
-        const { userType } = this.props.navigation.state.params
+
+        const { userType, userData } = this.props.navigation.state.params
+        const { uid } = userData
+        // var userProfiles = fetchFirebaseDataUrl("userProfile")
+        fetch("userProfiles");
+        // console.warn('userProfiles: ', userProfiles)
+        // console.warn(userData.uid)
+        // this.checkForUserProfile(this.props.navigatio n.state.params);
         let { container,
             containerBlock,
             welcomeTextView,
@@ -19,6 +30,7 @@ export default class HomeScreen extends Component {
                 <View style={welcomeTextView}>
                     <Text style={welcome}>Welcome!</Text>
                     <Text style={blurb}>You are logged in as {userType}</Text>
+                    {/* <Text style={blurb}>{userData}</Text> */}
                 </View>
             </View>
             <View style={containerBlock}></View>
