@@ -10,25 +10,28 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 ## Session 4
 *🗓 Th, Nov 15, 2018* <br />
 *📍 Home, HaddonView Apartments* <br />
-*🕐 6:15pm - ? * <br />
-*Commits: 7 <br>
+*🕐 6:15pm - 10:45pm* <br />
+*Commits: 7,8 <br>
 
 Internal thoughts: disappointed in myself for starting to code so late.<br><br>
 
 *Current time: 7:56. Gonna take a 15 minute power nap. Just commited. When I wake up am going to describe what I've accomplished so far*<br>
 *WOW. Time: 10pm. I just wasted 2 hours doing god knows whut. Ok, not going to try to describe what I've accomplished so far today, just going to continue listening to music and coding.*<br>
+*Time: 10:45. Tired😴.. Going to sleep. Going to wake up tomorrow at 4am and continue to work.*
 
 To Do List:<br>
 ✅ create sponsor accounts on firebase<br>
 ✅ create userProfile in firebase and create 2 data packet - codebreaker & dvlpr<br>
 ✅ data packet will include for now godMode(boolean), sponsoring(array of uids), sponsoredBy(array of uids) email, uid, name, instagram, notes, paid(boolean)<br>
 ✅ successfully fetching userProfiles from firebase database (commit 7)<br>
-✅ create dvlpr userProfile data packet from code
-✅ when navigating to HomeScreen, will check for will pull user data<br>
+✅ create dvlpr userProfile data packet from code<br>
+✅ when navigating to HomeScreen, will pull user data<br>
 ◻️ create default bottom tab (similar to instagram) - explore (aka all users) button, my profile screen, which will have sponsors<br>
 ◻️ set the state the user profile, display user data<br>
 ◻️ remove the back button from default head and replace with hamburger lines<br>
 ◻️ create ExploreScreen and MyProfileScreen<br>
+
+[session 4](screenshots/session4/session4.gif)
 
 ## Session 3
 *🗓 W, Nov 14, 2018* <br />
