@@ -5,15 +5,27 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 ## Installation Instructions
 
 * NOTE: This app isn't going to work because I didn't include the Firebase files.
-* After downloading the files, run ```npm install``` and then ```npm start``` and then ```react-native-run-ios```
+* But if you DO have the firebase files...After downloading the files, run ```npm install``` and then ```npm start``` and then ```react-native-run-ios```
+
+## Session 5
+*🗓 F, Nov 16, 2018* <br>
+*📍 Home, HaddonView Apartments* <br>
+*🕐 5am - ?* <br>
+*Commits: ?* <br>
+
+✅ Create the CustomTabBar<br>
+✅ Create and connect MyProfileScreen and ExploreScreen<br>
+✅ Customize MyProfile screen to display info, allow edits in edit mode. Add block for sponsors but no need to display just yet.<br>
+✅ Customize ExploreScreen to display all users.<br>
+FIRST THING'S FIRST, create the bottom bar!<br>
 
 ## Session 4
 *🗓 Th, Nov 15, 2018* <br />
 *📍 Home, HaddonView Apartments* <br />
 *🕐 6:15pm - 10:45pm* <br />
-*Commits: 7,8 <br>
+*Commits: 7,8* <br>
 
-Internal thoughts: disappointed in myself for starting to code so late.<br><br>
+Internal thoughts: disappointed in myself for starting to code so late.<br>
 
 *Current time: 7:56. Gonna take a 15 minute power nap. Just commited. When I wake up am going to describe what I've accomplished so far*<br>
 *WOW. Time: 10pm. I just wasted 2 hours doing god knows whut. Ok, not going to try to describe what I've accomplished so far today, just going to continue listening to music and coding.*<br>
