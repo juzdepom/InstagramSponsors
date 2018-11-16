@@ -4,9 +4,20 @@ import { CustomDefaultHeader, CustomTabBar } from '../reusable';
 import { fetch, createNewProfile, getUserProfile } from '../../firebase/firebaseConfig';
 import { MyProfileScreen, ExploreScreen } from './index';
 
+let s = {
+    myProfile: "MyProfile",
+    explore: "Explore",
+}
+
 export default class HomeScreen extends Component {
-    navigate(screenName){
-        this.props.navigation.navigate(screenName)
+    constructor(){
+        super();
+        this.state = {
+            currentScreen: s.myProfile,
+        }
+    }
+    switchScreens(currentScreen){
+        this.setState({currentScreen})
     }
 
     render() {
@@ -21,20 +32,30 @@ export default class HomeScreen extends Component {
             welcomeTextView,
             welcome,
             blurb } = styles
+        let screen;
+
+        if (this.state.currentScreen == s.myProfile){
+            screen = <MyProfileScreen userType={userType}/>
+        } else {
+            screen = <ExploreScreen/>
+        }
+
         return (
         <View style={container}>
             <View style={containerBlock}>
                 <CustomDefaultHeader leftButtonPress={() => this.props.navigation.goBack()}/>
             </View>
 
+            {screen}
+
             {/* <MyProfileScreen userType={userType}/> */}
-            <ExploreScreen/>
+            {/* <ExploreScreen/> */}
 
             <CustomTabBar
                 leftButtonTitle = "Explore"
                 rightButtonTitle = "My Profile"
-                leftButtonPress = {() => console.warn("go explore!")}
-                rightButtonPress = {() => console.warn("my profile!")}
+                leftButtonPress = {() => this.switchScreens(s.explore)}
+                rightButtonPress = {() => this.switchScreens(s.myProfile)}
             />
 
         </View>

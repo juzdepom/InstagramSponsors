@@ -19,6 +19,8 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 ✅ Customize ExploreScreen to display all users.<br>
 FIRST THING'S FIRST, create the bottom bar!<br>
 
+5:36 AM take a quick 10 nap + surf Instagram 1 min.
+
 ## Session 4
 *🗓 Th, Nov 15, 2018* <br />
 *📍 Home, HaddonView Apartments* <br />
