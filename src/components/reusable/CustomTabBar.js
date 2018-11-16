@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, Text, View, TouchableHighlight} from 'react-native';
 
 export default class CustomTabBar extends Component {
+
     render() {
         let {
             leftButtonTitle,
@@ -9,7 +10,11 @@ export default class CustomTabBar extends Component {
             leftButtonPress,
             rightButtonPress
         } = this.props
-        let { container, leftButton } = styles
+        let {
+            container,
+            leftButton,
+            rightButton
+        } = styles
         return (
         <View
             style={[container, { backgroundColor: 'lightgray' }]}>
@@ -22,7 +27,7 @@ export default class CustomTabBar extends Component {
             </TouchableHighlight>
 
             <TouchableHighlight
-                style={leftButton}
+                style={rightButton}
                 onPress={rightButtonPress}
             >
                 <Text>{rightButtonTitle}</Text>
@@ -44,7 +49,7 @@ const styles = StyleSheet.create({
         height: 30,
         width: 60,
     },
-    rightButtton: {
+    rightButton: {
         marginTop: 30,
         marginRight: 15,
         height: 30,

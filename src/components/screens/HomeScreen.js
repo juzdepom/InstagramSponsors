@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import { CustomDefaultHeader, CustomTabBar } from '../reusable';
 import { fetch, createNewProfile, getUserProfile } from '../../firebase/firebaseConfig';
+import { MyProfileScreen, ExploreScreen } from './index';
 
 export default class HomeScreen extends Component {
     navigate(screenName){
@@ -25,22 +26,15 @@ export default class HomeScreen extends Component {
             <View style={containerBlock}>
                 <CustomDefaultHeader leftButtonPress={() => this.props.navigation.goBack()}/>
             </View>
-            <View style={containerBlock}>
-                <View style={welcomeTextView}>
-                    <Text style={welcome}>Welcome!</Text>
-                    <Text style={blurb}>You are logged in as {userType}</Text>
-                    {/* <Text style={blurb}>{userData}</Text> */}
-                </View>
-            </View>
-            <View style={containerBlock}></View>
 
-            <View style={containerBlock}></View>
+            {/* <MyProfileScreen userType={userType}/> */}
+            <ExploreScreen/>
+
             <CustomTabBar
                 leftButtonTitle = "Explore"
                 rightButtonTitle = "My Profile"
                 leftButtonPress = {() => console.warn("go explore!")}
                 rightButtonPress = {() => console.warn("my profile!")}
-
             />
 
         </View>

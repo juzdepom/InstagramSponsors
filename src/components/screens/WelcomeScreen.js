@@ -4,6 +4,12 @@ import { CustomAuthButton } from '../reusable';
 import { firebaseApp }  from '../../firebase/firebaseConfig';
 
 export default class WelcomeScreen extends Component {
+    constructor() {
+        super();
+        this.state = {
+            currentScreen: null
+        };
+    }
     navigate(screenName){
         this.props.navigation.navigate(screenName)
     }
@@ -21,15 +27,12 @@ export default class WelcomeScreen extends Component {
 
     }
     render() {
-
-        // firebase.initializeApp(firebaseConfig);
         let { container,
             containerBlock,
             welcomeTextView,
             welcome,
             blurb } = styles
         return (
-
         <View style={container}>
             <View style={containerBlock}></View>
             <View style={containerBlock}>
