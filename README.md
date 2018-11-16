@@ -15,10 +15,13 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 
 Internal thoughts: disappointed in myself for starting to code so late.<br><br>
 
+*Current time: 7:56. Gonna take a 15 minute power nap. Just commited. When I wake up am going to describe what I've accomplished so far*
+
 To Do List:<br>
 ✅ create sponsor accounts on firebase<br>
 ✅ create userProfile in firebase and create 2 data packet - codebreaker & dvlpr<br>
 ✅ data packet will include for now godMode(boolean), sponsoring(array of uids), sponsoredBy(array of uids) email, uid, name, instagram, notes, paid(boolean)<br>
+✅ successfully fetching userProfiles from firebase database (commit 7 )
 ◻️ when navigating to HomeScreen, will check for data with uid, if does not exist, create it with defaults (console warn)<br>
 ◻️ remove the back button from default head and replace with hamburger lines<br>
 ◻️ create default bottom tab (similar to instagram) - explore (aka all users) button, my profile screen, which will have my sponsors<br>
