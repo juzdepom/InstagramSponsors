@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import { CustomDefaultHeader } from '../reusable';
-import { fetchFirebaseDataUrl, fetch } from '../../firebase/firebaseConfig';
+import { fetch, createNewProfile, getUserProfile } from '../../firebase/firebaseConfig';
 
 export default class HomeScreen extends Component {
     componentWillMount(){
@@ -13,6 +13,26 @@ export default class HomeScreen extends Component {
         const { uid } = userData
         // var userProfiles = fetchFirebaseDataUrl("userProfile")
         fetch("userProfiles");
+        getUserProfile(uid)
+        // createNewProfile("onTgOief53hXLf913FO2N1sU92h1", "devstickerscom@gmail.com", "devstickers")
+        // createNewProfile("VijdqsaXhgabkYqv8OQ7uaRCsAg2", "hi@dvlpr.io", "DVLPR")
+        // createNewProfile("PvTZbsCCdQMKKQPUpEHVtEM0PAy1", "julia.gao.miller@gmail.com", "CodebreakerJulia")
+        // createNewProfile("7L7b3MrYSxcfCpXK6oVNUPWYIYB2", "adrienne.tacke@gmail.com", "Adrienne")
+        // createNewProfile("OtzyrHHdsnMldwIHJLhoAvAgibO2", "sean@nakmuaynation.com", "Sean")
+        // createNewProfile("WrIYdUGvnQMsatBYOo5UFTA0sAG2", "mikhail@micainteractive.com", "Mikhail")
+
+        // createNewProfile("elCxMA9UeefDxDStZtPkCkQ9oXZ2", "tim@fueledonbacon.com", "Tim")
+
+        // createNewProfile("hmujV1fXLUYrMKKt8pArz9HFgjF3", "info@devhero.shop", "DevHero")
+
+        // createNewProfile("zJqVuPJKs9ZMgjcEmJaDCUcNbHU2", "marvizu@kicksta.co", "Miguel")
+
+        // createNewProfile("7L7b3MrYSxcfCpXK6oVNUPWYIYB2", "", "")
+
+
+
+
+
         // console.warn('userProfiles: ', userProfiles)
         // console.warn(userData.uid)
         // this.checkForUserProfile(this.props.navigatio n.state.params);
