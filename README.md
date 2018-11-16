@@ -31,7 +31,7 @@ To Do List:<br>
 ◻️ remove the back button from default head and replace with hamburger lines<br>
 ◻️ create ExploreScreen and MyProfileScreen<br>
 
-[session 4](screenshots/session4/session4.gif)
+![session 4](screenshots/session4/session4.gif)
 
 ## Session 3
 *🗓 W, Nov 14, 2018* <br />
