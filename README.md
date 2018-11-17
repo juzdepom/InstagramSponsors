@@ -7,6 +7,16 @@ by [@codebreakerjulia](https://www.instagram.com/codebreakerjulia/)
 * NOTE: This app isn't going to work because I didn't include the Firebase files.
 * But if you DO have the firebase files...After downloading the files, run ```npm install``` and then ```npm start``` and then ```react-native-run-ios```
 
+## Session 6
+*🗓 S, Nov 17, 2018* <br>
+*📍 Home, HaddonView Apartments* <br>
+*🕐 4am-5am <br>
+*Commits: 12* <br>
+
+Agh, still trying to figure out this asynchronous issue. Am successfully fetching user profile data from Firebase. However, am not successfully changing props with it. See the ```getUserProfile()``` in ```HomeScreen.js```
+
+![session6](screenshots/session6/session6.gif)
+
 ## Session 5
 *🗓 F, Nov 16, 2018* <br>
 *📍 Home, HaddonView Apartments* <br>
@@ -21,7 +31,7 @@ FIRST THING'S FIRST, create the bottom bar!<br>
 
 20 min break (5:36 AM-5:56 AM)<br>
 6:37 - I'm stuck 🤯
-I think it has something to do with synchronous and asynchronous fetching. We are working with HomeScreen.js and firebaseConfig. I need to pass the user profile data that I'm fetching from the database to the MyProfile component. However with how I've currently written the code, userProfileData is being set to undefined because it's not waiting for the data to be fetched back from the database. Wonder if I can check in with Kostas? If I was working at Think, I could ask the senior devs when I come in to work.
+I think it has something to do with synchronous and asynchronous fetching. We are working with HomeScreen.js and firebaseConfig. I need to pass the user profile data that I'm fetching from the database to the MyProfile component. However with how I've currently written the code, userProfileData is being set to undefined because it's not waiting for the data to be fetched back from the database. Wonder if I can check in with Kostas? If I was working at Think, I could ask the senior devs when I came in to work🤔...
 
 ![cant get user profile data](screenshots/session5/cant-get-userdata.png)
 
